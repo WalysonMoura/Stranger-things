@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== BOXICONS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="../assets/css/historia.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <title>Responsive bottom navigation</title>
+
+  <!--=============== SCRIPT ===============-->
+
+
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header" id="header">
+    <nav class="nav container">
+
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+
+          <li class="nav__item">
+            <a href="../home.html" class="nav__link">
+              <i class='bi bi-house-door nav__icon'></i>
+              <span class="nav__name">Home</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="./jogo.html" class="nav__link ">
+              <i class="bi bi-controller nav__icon"></i>
+              <span class="nav__name">Jogo</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#about" class="nav__link active-link">
+              <i class='bx bxs-camera-movie nav__icon'></i>
+              <span class="nav__name">História</span>
+            </a>
+          </li>
+
+
+
+        </ul>
+      </div>
+
+
+    </nav>
+  </header>
+  <main>
+    <!--=============== HOME ===============-->
+    <section class="c-imagem"></section>
+
+    <div class="seta-conteiner">
+      <a href="#about" onclick="clicar()"><i class='bx bx-chevron-down bx-fade-up c-imagem__seta'></i>
+      </a>
+    </div>
+    <!--==================== ABOUT ====================-->
+    <section class="about section">
+      <div class="about__container container">
+        <div class="about__data">
+          <h2 class="section__title" id="about">Conheça um pouco sobre ...<br><img class="titulo-img" src="../assets/img/titulo.svg" alt=""></h2>
+          <p class="about__description">
+            Passada na década de 80, na cidade fictícia de Hawkings, Stranger Things conta a história de um garoto que desaparece e dos eventos paranormais que se passam em torno desse acontecimento. Os personagens principais são seu grupo de amigos que acaba fazendo amizade com uma menina fugida de um laboratório e com poderes psicocinéticos.
+          </p>
+
+          <p class="about__description">
+            O sucesso da série está na forma como esta mistura o paranormal, o mistério e o drama, com representações fenomenais por parte dos atores. Além disso, Stranger Things apela também à nostalgia, fazendo uma homenagem à cultura pop dos anos 80.
+          </p>
+          <div class="c-btn__conteiner">
+            <button onclick="assistir()" class="btn"> ASSISTIR AGORA
+            </button>
+          </div>
+          
+        </div>
+
+        <div class="about__img">
+          <div class="about__img-overlay">
+            <img src="assets/img/about1.jpg" alt="" class="about__img-one">
+          </div>
+
+          <div class="about__img-overlay">
+            <img src="assets/img/about2.jpg" alt="" class="about__img-two">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== MODAL ====================-->
+
+
+
+    <!--==================== DISCOVER ====================-->
+
+
+
+    <!--=============== ELENCO ===============-->
+    <section class="c-cards-elenco ">
+      <h2 class="section__title about__title">Elenco</h2>
+
+      <section class="c-elenco">
+
+        <section class="card contact">
+          <div class="icon">
+            <img src="../assets/img/perso3.png" class="img" alt="Contact us.">
+          </div>
+          <h3>Will</h3>
+
+          <button>Gabriel Nobre</button>
+        </section>
+
+        <section class="card contact">
+          <div class="icon">
+            <img src="../assets/img/perso1.png" class="img">
+          </div>
+          <h3>Eleven</h3>
+            
+          <button>Geovana</button>
+        </section>
+
+        <section class="card contact">
+          <div class="icon">
+            <img src="../assets/img/perso2~2.png" class="img" alt="About us.">
+          </div>
+          <h3>Joyce.</h3>
+          
+          <button>Lilian</button>
+        </section>
+
+        <section class="card contact">
+          <div class="icon">
+            <img src="../assets/img/perso7.png" class="img" alt="About us.">
+          </div>
+          <h3>Dustin</h3>
+          
+          <button>Robério</button>
+        </section>
+
+        <section class="card contact">
+          <div class="icon">
+            <img src="../assets/img/perso6.png" class="img" alt="About us.">
+          </div>
+          <h3>Mike</h3>
+          
+          <button>Guilherme Uchôa</button>
+        </section>
+
+
+       <section class="card contact">
+          <div class="icon">
+            <img src="../assets/img/perso5~2.png" class="img" alt="About us.">
+          </div>
+          <h3>Lucas</h3>
+          
+          <button>Mayke</button>
+        </section>
+
+        <section class="card contact">
+          <div class="icon">
+            <img src="../assets/img/perso4.png" class="img" alt="About us.">
+          </div>
+          <h3>Jonathan</h3>
+          
+          <button>Cayo</button>
+        </section>
+
+      </section>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+
+    </section>
+  </main>
+
+
+  <!--=============== MAIN JS ===============-->
+  <script src="../assets/js/historia.js"></script>
+
+</body>
+
+</html>
