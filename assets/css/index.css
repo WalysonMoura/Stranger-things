@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.l-body{
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/porta.png");
+  background-position: top top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  
+  
+}
+/* From uiverse.io by @namecho */
+
+.c-main{
+  height: 5rem;
+  width: 5rem;
+  z-index: 2;
+  font-family: 'Lacquer', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  top: 200px;
+  right: 205px;
+   
+}
+
+.c-main__texto{
+  color: #741A1A;
+  font-size: 2.5rem;
+}
+
+@media (max-width:440px){
+				.c-main{
+								top: 20%;
+							  right: 20%;
+			}
+}
+
+@media (max-width: 385px){
+				.text-top{
+								top: 10%;
+								right: 10%;
+								
+      	}
+			.c-main__texto{
+  			
+  				font-size: 2rem;
+				}
+}
+
+
+button{
+  width: 100%;
+  height: 100%;
+  
+}
+button,
+button::after {
+ --green: #741A1A;
+ font-size: 15px;
+ padding: 0.7em 2.7em;
+ letter-spacing: 0.06em;
+ position: relative;
+
+ border-radius: 0.6em;
+ 
+ transition: all 0.3s;
+ line-height: 1.4em;
+ border: 2px solid var(--green);
+ background: linear-gradient(to right,  #741A1AB8 1%, transparent 40%,transparent 60% ,  #741A1AB3 100%);
+ color: var(--green);
+ box-shadow: inset 0 0 10px #741A1A, 0 0 9px 3px  #741A1A;
+ text-align: center;
+font-family: 'Lacquer', cursive;
+font-size: 20px;
+}
+
+button::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "HOVER ME";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+
+button:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
+
+
+
+

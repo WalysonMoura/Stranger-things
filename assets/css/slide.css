@@ -1,0 +1,157 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+
+  /*========== Margenes Bottom ==========*/
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-25: 1.25rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  /*========== Hover overlay ==========*/
+  --img-transition: .3s;
+  --img-hidden: hidden;
+  --img-scale: scale(1.1);
+}
+
+
+/*=============== BASE ===============*/
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.main {
+  overflow-x: hidden;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+
+
+.container {
+  max-width: 968px;
+  margin-left: var(--mb-1);
+  margin-right: var(--mb-1);
+}
+
+
+
+/*=============== DISCOVER ===============*/
+.discover__card {
+  position: relative;
+  width: 200px;
+  overflow: var(--img-hidden);
+}
+
+.discover__data {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+
+.discover__title, 
+.discover__description {
+  color: var(--white-color);
+}
+
+.discover__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.discover__description {
+  display: block;
+  font-size: var(--smaller-font-size);
+}
+
+.discover__img {
+  transition: var(--img-transition);
+}
+
+.discover__img:hover {
+  transform: var(--img-scale);
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+
+
+  
+
+
+
+
+
+
+/*=============== MEDIA QUERIES ===============*/
+
+
+
+
+@media screen and (min-width: 768px) {
+  
+ 
+
+  .discover__container {
+    width: 610px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .discover__container,
+  .place__container {
+    padding-top: 2rem;
+  }
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .discover__card {
+    width: 237px;
+  }
+  .discover__container {
+    width: 700px;
+  }
+  .discover__data {
+    left: 1.5rem;
+    bottom: 2rem;
+  }
+  .discover__title {
+    font-size: var(--h2-font-size);
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
