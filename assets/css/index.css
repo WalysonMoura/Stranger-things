@@ -51,13 +51,13 @@
 
 @media (max-width: 385px){
 				.text-top{
-								top: 10%;
-								right: 10%;
+								top: 9%;
+								right: 8%;
 								
       	}
 			.c-main__texto{
   			
-  				font-size: 2rem;
+  				font-size: 1.5rem;
 				}
 }
 
