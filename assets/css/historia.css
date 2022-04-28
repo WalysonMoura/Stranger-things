@@ -443,7 +443,7 @@ padding: 1rem;
 
 }
 
-.c-elenco section.card button {
+.c-elenco section.card a {
     padding: 0.5rem 1rem;
     text-transform: uppercase;
     border-radius: 32px;
@@ -455,7 +455,7 @@ padding: 1rem;
     margin-bottom: 16px 0;
 }
 
-.c-elenco section.card.contact button {
+.c-elenco section.card.contact a {
     background: linear-gradient(to right, #8b4558, #f0424e);
 }
 
